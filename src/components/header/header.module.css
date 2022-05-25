@@ -1,0 +1,82 @@
+.header {
+    background-color: rgb(50, 52, 132);
+    box-shadow: 1px 0px 40px 5px rgba(240, 237, 237, 0.2) inset;
+    color: white;
+    font-family: consolas;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-family: Josefine;
+    text-align: center;
+    color: white;
+}
+
+.header nav li {
+    list-style: none;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header nav li a {
+    color: rgb(202, 202, 246);
+    text-decoration: none;
+    font-size: 15pt;
+    font-family: consolas;
+    transition: 0.5s;
+}
+
+.header nav li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.header nav li img {
+    width: 20px;
+    height: 20px;
+    padding-right: 25px;
+}
+
+.accountBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: SpaceMono;
+    color: rgb(69, 214, 180);
+}
+
+.accountBlock img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+@font-face {
+    font-family: "Grape";
+    src: url("./../../media/fonts/GrapeNuts-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Josefine";
+    src: url("./../../media/fonts/JosefinSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Amatic";
+    src: url("./../../media/fonts/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url("./../../media/fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PoiretOne";
+    src: url("./../../media/fonts/PoiretOne-Regular.ttf");
+}
