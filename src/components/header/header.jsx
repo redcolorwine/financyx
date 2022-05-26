@@ -15,10 +15,10 @@ const Header = () => {
             </div>
 
             <nav>
-                <li><img src={profile} /><NavLink to="/">Обзор</NavLink></li>
-                <li><img src={money} /><NavLink to="/">Транзакции</NavLink></li>
-                <li><img src={task} /><NavLink to="/">Планы и цели</NavLink></li>
-                <li><img src={report} /><NavLink to="/">Отчеты</NavLink></li>
+                <li><img src={profile} /><NavLink to="/review">Обзор</NavLink></li>
+                <li><img src={money} /><NavLink to="/transactions">Транзакции</NavLink></li>
+                <li><img src={task} /><NavLink to="/plans">Планы и цели</NavLink></li>
+                <li><img src={report} /><NavLink to="/reports">Отчеты</NavLink></li>
             </nav>
         </div>
     )
