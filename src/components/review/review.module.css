@@ -1,6 +1,7 @@
 .review {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .welcome p {
@@ -106,11 +107,13 @@
 
 .forecast table th {
     font-size: 18pt;
-    color:white;
+    color: white;
 }
+
 .forecast table tr td {
-    color:white;
+    color: white;
 }
+
 .forecast table span {
     color: rgb(124, 221, 217);
     font-weight: 700;
@@ -128,6 +131,58 @@
     flex-direction: column;
 }
 
+.editFinance {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.editFinance form {
+    width: 100%;
+}
+
+.editFinance form input {
+    display: block;
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: Comforta;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gainsboro;
+}
+
+.editFinance form button {
+    margin-top: 15px;
+    background-color: rgb(51, 49, 99);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Comforta;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.editFinance form button.editButton {
+    margin-left: 10px;
+}
+.editFinance button{
+    padding: 3px;
+    margin-top: 5px;
+    font-family: Comforta;
+    background-color: rgb(232, 232, 232);
+    border:1px solid rgb(232, 232, 240);
+    border-radius: 2px;
+}
 @font-face {
     font-family: "Comforta";
     src: url("./../../media/fonts/Comfortaa-VariableFont_wght.ttf");

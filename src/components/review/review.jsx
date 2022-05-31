@@ -1,7 +1,13 @@
 import cmedia from './review.module.css';
 import settingsButton from './../../media/set.png';
+import PersonalFinanceEdit from './personalFinanceEdit';
 
 const Review = (props) => {
+
+    const OnBut = () => {
+        props.editFinanceWindow(true);
+    }
+
     return (
         <div className={cmedia.review}>
             <div className={cmedia.welcome}>
@@ -12,11 +18,11 @@ const Review = (props) => {
                 <div className={cmedia.firstBlock}>
                     <div className={cmedia.moneyBlock}>
                         <h2>Мои финансы</h2>
-                        <p>Баланс: <span>278'000 р.</span></p>
-                        <p>Наличные: <span>35'000 р.</span></p>
-                        <p>Карты: <span>243'000 р.</span></p>
-                        <p>Кредитка: <span>0 р.</span></p>
-                        <img src={settingsButton} />
+                        <p>Баланс: <span>{props.personalFinance.balance} p.</span></p>
+                        <p>Наличные: <span>{props.personalFinance.cash} р.</span></p>
+                        <p>Карты: <span>{props.personalFinance.cards} р.</span></p>
+                        <p>Кредитка: <span>{props.personalFinance.credit} р.</span></p>
+                        <img src={settingsButton} onClick={OnBut} />
                     </div>
                     <div className={cmedia.monthBudget}>
                         <h2>Бюджет на май</h2>
@@ -99,6 +105,8 @@ const Review = (props) => {
                         <p>Интернет - 800 р.</p>
                     </div>
                 </div>
+                {props.editFinance && <PersonalFinanceEdit editFinanceWindow={props.editFinanceWindow} personalFinance={props.personalFinance} editPersonalFinance={props.editPersonalFinance} typesOfAccounts={props.typesOfAccounts} myAccounts={props.myAccounts} />}
+
             </div>
         </div>
     )

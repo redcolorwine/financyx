@@ -4,6 +4,7 @@ import Header from './components/header/header';
 import Plans from './components/plans/plans';
 import Reports from './components/reports/reports';
 import Review from './components/review/review';
+import ReviewContainer from './components/review/reviewContainer';
 import Transactions from './components/transactions/transactions';
 
 function App() {
@@ -12,11 +13,11 @@ function App() {
       <Header />
       <div className="App_wrapper">
         <Routes>
-          <Route path='/review' element={<Review />} />
+          <Route path='/review' element={<ReviewContainer />} />
           <Route path='/transactions' element={<Transactions />} />
           <Route path='/plans' element={<Plans />} />
           <Route path='/reports' element={<Reports />} />
-          <Route path='*' element={<Review />} />
+          <Route path='*' element={<ReviewContainer />} />
         </Routes>
 
       </div>

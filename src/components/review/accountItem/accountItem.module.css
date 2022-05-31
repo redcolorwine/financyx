@@ -1,0 +1,56 @@
+.accountItem {}
+
+.accountItem:hover {}
+
+.textBlock {
+    color: white;
+    background-color: rgb(50, 52, 132);
+    margin-top: 5px;
+    border-bottom: 1px solid gainsboro;
+    transition: 0.3s;
+    font-family: Comforta;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBlock:hover {
+    cursor: pointer;
+    color: rgb(240, 146, 216);
+}
+
+.textBlock p {
+    margin: 0;
+    color: rgb(25, 180, 250);
+    text-decoration: underline;
+}
+
+.textBlock span {
+    color: rgb(255, 255, 255);
+}
+
+.editAccount {
+    width: 400px;
+    font-family: Comforta;
+    font-size: 10pt;
+}
+
+.editAccount form input {}
+
+.editAccount form select {
+    display: block;
+    font-family: Comforta;
+    font-size: 10pt;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Comforta";
+    src: url("./../../../media/fonts/Comfortaa-VariableFont_wght.ttf");
+}
