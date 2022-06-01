@@ -17,7 +17,7 @@ const AccountItem = (props) => {
     return (
         <div className={cmedia.accountItem}>
             <div className={cmedia.textBlock} onClick={onAccountClick}>{props.name} <p>{props.type}</p> <span>{props.balance} P.</span></div>
-            {localEditAccount && <EditAccount typesOfAccounts={props.typesOfAccounts} />}
+            {localEditAccount && <EditAccount setLocalEditAccount={setLocalEditAccount} getBalance={props.getBalance} editPersonalAccount={props.editPersonalAccount} typesOfAccounts={props.typesOfAccounts} id={props.id} name={props.name} status={props.status} type={props.type} balance={props.balance} currency={props.currency} />}
         </div>
     )
 }

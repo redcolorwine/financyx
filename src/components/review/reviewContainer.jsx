@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { editAccountWindow, editFinanceWindow, editPersonalFinance } from '../../redux_store/reviewReducer';
+import { editAccountWindow, editFinanceWindow, editPersonalAccount, editPersonalFinance, getBalance } from '../../redux_store/reviewReducer';
 import Review from './review';
 
 let mapStateToProps = (state) => {
@@ -8,6 +8,7 @@ let mapStateToProps = (state) => {
         editFinance: state.review.editFinance,
         myAccounts: state.review.myAccounts,
         typesOfAccounts: state.review.typesOfAccounts,
+        allthebalance: state.review.allthebalance
     }
 }
 
@@ -20,7 +21,13 @@ let mapDispatchToProps = (dispatch) => {
         },
         editPersonalFinance: (personalFinance) => {
             dispatch(editPersonalFinance(personalFinance))
-        }
+        },
+        editPersonalAccount: (account) => {
+            dispatch(editPersonalAccount(account))
+        },
+        getBalance: () => {
+            dispatch(getBalance())
+        },
     }
 }
 

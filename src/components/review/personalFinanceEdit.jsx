@@ -39,7 +39,7 @@ const PersonalFinanceEdit = (props) => {
     }
     let accounts = props.myAccounts.map(account => {
         return (<div>
-            <AccountItem typesOfAccounts={props.typesOfAccounts} name={account.name} type={account.type} balance={account.balance} currency={account.currency} />
+            <AccountItem getBalance={props.getBalance} editPersonalAccount={props.editPersonalAccount} typesOfAccounts={props.typesOfAccounts} id={account.id} name={account.name} status={account.status} type={account.type} balance={account.balance} currency={account.currency} />
         </div>)
     })
     return (
